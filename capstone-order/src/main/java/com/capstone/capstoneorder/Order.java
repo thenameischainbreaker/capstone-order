@@ -1,7 +1,9 @@
 package com.capstone.capstoneorder;
 
 import java.sql.Date;
+//import java.sql.Timestamp;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -15,6 +17,7 @@ public class Order {
 	private int u_id;
 	private int p_id;
 	private int quantity;
+	@Column(name = "o_date")
 	private Date date;
 	private double o_price;
 	private int d_id;
