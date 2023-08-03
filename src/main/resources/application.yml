@@ -1,0 +1,11 @@
+spring:
+ application:
+  name: capstone-order
+eureka:
+ client:
+  register-with-eureka: true
+  fetch-registry: true
+  service-url:
+   defaultZone: ${EUREKA_SERVER_URL:http://localhost:8010/eureka}
+ instance:
+  hostname: ${INSTANCE_HOSTNAME:localhost}
