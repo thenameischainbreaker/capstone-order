@@ -29,7 +29,7 @@ import com.capstone.capstoneorder.service.OrderServiceImpl;
 
 @RestController
 @RequestMapping("/order")
-@CrossOrigin(origins = "https://domainofchain.s3.us-east-2.amazonaws.com")
+@CrossOrigin(origins = {"https://domainofchain.s3.us-east-2.amazonaws.com","http://localhost:4200/"})
 public class OrderController {
 	@Autowired
 	OrderServiceImpl service;
