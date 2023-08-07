@@ -29,7 +29,7 @@ import com.capstone.capstoneorder.service.OrderServiceImpl;
 
 @RestController
 @RequestMapping("/order")
-@CrossOrigin(origins = {"https://domainofchain.s3.us-east-2.amazonaws.com","http://localhost:4200/"})
+@CrossOrigin(origins = {"https://domainofchain.s3.us-east-2.amazonaws.com","http://localhost:4200/","http://localhost:4200/","https://capstone-angular-jj.s3.us-east-2.amazonaws.com"})
 public class OrderController {
 	@Autowired
 	OrderServiceImpl service;
@@ -55,10 +55,10 @@ public class OrderController {
 			 
 			 
 			 if (service.postOrder(pending_orders, userId)) {
-				 return "Orders committed successfully.";
+				 return "\"Orders committed successfully.\"";
 			 }
 			 else {
-				 return "Orders not committed.";
+				 return "\"Orders not committed.\"";
 			 }
 					
 						 
